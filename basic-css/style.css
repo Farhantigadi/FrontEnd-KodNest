@@ -5,3 +5,12 @@
     border-color: 2px black;
     border-radius: 10px;
 }
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    margin: 10px;
+}
+
