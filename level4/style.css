@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    height: 60px;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+header > ul > li {
+    display: inline-block;
+    margin-right: 60px;
+  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    height: 30px;
+}
+
