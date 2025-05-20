@@ -23,3 +23,35 @@ a{
     height: 30px;
 }
 
+.card {
+    height: 330px;
+    width: 250px; 
+    background-color: rgb(86, 193, 86);
+    margin: 20px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+#cards{
+    display: flex;
+}
+.inside {
+    background-color: #fff;
+    height: 170px;
+    width: 180px;
+   margin-bottom: 100px;
+}
+footer{
+    height: 80px;
+ margin-top: 250px;
+ background-color: #131A22;
+ color: white;
+ text-align: center;
+ 
+}
+
+
+
