@@ -1,0 +1,12 @@
+#Box{
+    background-color: bisque;
+}
+.hcolor{
+    color: rgb(230, 147, 147);
+}
+#Submit{
+    background-color: rgb(151, 226, 151) ;
+    border-radius: 8px;
+    height: 25px;
+    width: 80px;
+}
