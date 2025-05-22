@@ -3,19 +3,14 @@ div{
     width: 100px;
     background-color: rgb(99, 173, 155);
 }
-@media(width : 600px){
-    div{
-        background-color: rgb(199, 170, 117);
 
-    }
-}
-@media(max-width : 500px){
+@media(max-width : 800px){
     div{
         background-color: rgb(13, 94, 151);
 
     }
 }
-@media(min-width : 600px){
+@media(max-width : 400px){
     div{
         background-color: rgb(173, 117, 199);
 
