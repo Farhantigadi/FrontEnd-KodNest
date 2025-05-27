@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>var vs let vs const</title>
+</head>
+<body>
+    <h2>Open the browser console to see the output.</h2>
+    <script>
+        // Scope demo
+        function scopeDemo() {
+            if (true) {
+                var a = 1;
+                let b = 2;
+                const c = 3;
+
+                console.log("Inside block:");
+                console.log("var a:", a);   // ✅ 1
+                console.log("let b:", b);   // ✅ 2
+                console.log("const c:", c); // ✅ 3
+            }
+
+            console.log("Outside block:");
+            console.log("var a:", a);   // ✅ 1 (function-scoped)
+            // console.log("let b:", b); // ❌ Error (block-scoped)
+            // console.log("const c:", c); // ❌ Error (block-scoped)
+        }
+
+        scopeDemo();
+
+        // Redeclaration demo
+        var x = 10;
+        var x = 20; // ✅ Allowed with var
+        console.log("Redeclared var x:", x); // 20
+
+        let y = 30;
+        // let y = 40; // ❌ Error: Identifier 'y' has already been declared
+
+        const z = 50;
+        // const z = 60; // ❌ Error: Identifier 'z' has already been declared
+
+        // Reassignment demo
+        var m = 100;
+        m = 200; // ✅ Allowed
+        console.log("var m reassigned to:", m); // 200
+
+        let n = 300;
+        n = 400; // ✅ Allowed
+        console.log("let n reassigned to:", n); // 400
+
+        const o = 500;
+        // o = 600; // ❌ Error: Assignment to constant variable
+
+        // Hoisting demo
+        console.log("Hoisted var p:", p); // ✅ undefined
+        var p = "I am hoisted with undefined";
+
+        // console.log("Hoisted let q:", q); // ❌ ReferenceError
+        let q = "I am let, not accessible before declaration";
+    </script>
+</body>
+</html>
